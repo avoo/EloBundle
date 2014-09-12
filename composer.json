@@ -1,7 +1,7 @@
 {
     "name": "avoo/elo-bundle",
     "type": "symfony-bundle",
-    "description": "Integration od the Elo library calculator",
+    "description": "Integration of the Elo library calculator",
     "keywords": ["Elo", "rewards", "competition", "points", "rank"],
     "license": "MIT",
     "require": {
