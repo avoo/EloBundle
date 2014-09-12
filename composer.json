@@ -5,8 +5,7 @@
     "keywords": ["Elo", "rewards", "competition", "points", "rank"],
     "license": "MIT",
     "require": {
-        "php": ">=5.3.3",
-        "avoo/elo": "dev-master@dev"
+        "php": ">=5.3.3"
     },
     "require-dev": {
         "phpunit/phpunit": "*"
