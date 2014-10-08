@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+
+<container xmlns="http://symfony.com/schema/dic/services"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+
+    <services>
+        <service id="avoo_elo.calculator.default" class="Avoo\Elo\EloPoint" public="false">
+            <argument type="service">
+                <service id="avoo_elo.configuration.default" class="Avoo\Elo\Configuration\Configuration" public="false" />
+            </argument>
+            <argument type="service">
+                <service id="avoo_elo.aggregation.default" class="Avoo\Elo\Model\EloAggregation" public="false" />
+            </argument>
+        </service>
+    </services>
+</container>
