@@ -35,14 +35,24 @@ use Avoo\Elo\Model\EloPlayerInterface;
 class EloPlayer implements EloPlayerInterface
 {
     /**
+     * @var integer
+     */
+    protected $id;
+
+    /**
      * @var integer $elo
      */
     protected $elo;
 
     /**
-     * @var EloPlayer $parent
+     * Get id
+     *
+     * @return integer
      */
-    protected $parent;
+    public function getId()
+    {
+        return $this->id;
+    }
 
     /**
      * Set elo
@@ -66,27 +76,5 @@ class EloPlayer implements EloPlayerInterface
     public function getElo()
     {
         return $this->elo;
-    }
-
-    /**
-     * Set parent
-     *
-     * @param EloPlayerInterface $parent
-     *
-     * @return $this
-     */
-    public function setParent(EloPlayerInterface $parent)
-    {
-        $this->parent = $parent;
-
-        return $this;
-    }
-
-    /**
-     * @return EloPlayerInterface
-     */
-    public function getParent()
-    {
-        return $this->parent;
     }
 } 

@@ -6,12 +6,12 @@
 
     <services>
         <service id="avoo_elo.calculator.default" class="Avoo\Elo\EloPoint" public="false">
-            <argument type="service">
-                <service id="avoo_elo.configuration.default" class="Avoo\Elo\Configuration\Configuration" public="false" />
+            <argument type="service" id="avoo_elo.configuration.default">
             </argument>
-            <argument type="service">
-                <service id="avoo_elo.aggregation.default" class="Avoo\Elo\Model\EloAggregation" public="false" />
-            </argument>
+            <argument type="service" id="avoo_elo.aggregation.default" />
         </service>
+
+        <service id="avoo_elo.configuration.default" class="Avoo\Elo\Configuration\Configuration" public="false" />
+        <service id="avoo_elo.aggregation.default" class="Avoo\Elo\Model\EloAggregation" public="false" />
     </services>
 </container>
