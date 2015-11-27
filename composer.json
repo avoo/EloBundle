@@ -7,7 +7,7 @@
     "require": {
         "php": ">=5.3.3",
         "avoo/elo": "0.1.*",
-        "gedmo/doctrine-extensions": "~2.4"
+        "stof/doctrine-extensions-bundle": "~2.1"
     },
     "require-dev": {
         "phpunit/phpunit": "*"
