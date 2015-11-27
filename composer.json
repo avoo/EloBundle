@@ -6,7 +6,8 @@
     "license": "MIT",
     "require": {
         "php": ">=5.3.3",
-        "avoo/elo": "0.1.*"
+        "avoo/elo": "0.1.*",
+        "beberlei/DoctrineExtensions": "~1.0"
     },
     "require-dev": {
         "phpunit/phpunit": "*"
