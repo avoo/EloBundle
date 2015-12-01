@@ -6,12 +6,17 @@
 
     <services>
         <service id="avoo_elo.calculator.default" class="Avoo\Elo\EloPoint" public="false">
-            <argument type="service" id="avoo_elo.configuration.default">
-            </argument>
+            <argument type="service" id="avoo_elo.configuration.default" />
             <argument type="service" id="avoo_elo.aggregation.default" />
         </service>
 
         <service id="avoo_elo.configuration.default" class="Avoo\Elo\Configuration\Configuration" public="false" />
         <service id="avoo_elo.aggregation.default" class="Avoo\Elo\Model\EloAggregation" public="false" />
+
+        <service id="avoo_elo.listener.elo_versus" class="Avoo\EloBundle\Listener\EloVersusSubscriber">
+            <argument type="service" id="avoo_elo.calculator.default" />
+            <!--<tag name="doctrine.event_listener" event="prePersist" method="prePersist" />-->
+            <tag name="doctrine.event_subscriber" />
+        </service>
     </services>
 </container>

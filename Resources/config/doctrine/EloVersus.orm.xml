@@ -9,6 +9,7 @@
         <field name="createdAt" type="datetime" column="created_at">
             <gedmo:timestampable on="create"/>
         </field>
+        <field name="endedAt" type="datetime" column="ended_at" nullable="true" />
         <field name="winner" type="float" column="winner" nullable="true" />
     </mapped-superclass>
 </doctrine-mapping>

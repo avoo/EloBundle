@@ -27,6 +27,8 @@
 namespace Avoo\EloBundle\Entity;
 
 use Avoo\Elo\Model\EloPlayerInterface;
+use Avoo\Elo\Model\EloUserInterface;
+use Doctrine\ORM\Event\LifecycleEventArgs;
 
 
 /**
@@ -43,6 +45,11 @@ class EloPlayer implements EloPlayerInterface
      * @var integer $elo
      */
     protected $elo;
+
+    /**
+     * @var object $user
+     */
+    protected $user;
 
     /**
      * Get id
@@ -76,5 +83,25 @@ class EloPlayer implements EloPlayerInterface
     public function getElo()
     {
         return $this->elo;
+    }
+
+    /**
+     * Set user
+     *
+     * @param EloUserInterface $user
+     */
+    public function setUser(EloUserInterface $user)
+    {
+        $this->user = $user;
+    }
+
+    /**
+     * Get user
+     *
+     * @return EloUserInterface
+     */
+    public function getUser()
+    {
+        return $this->user;
     }
 } 

@@ -56,6 +56,11 @@ class EloVersus implements EloVersusInterface
     protected $createdAt;
 
     /**
+     * @var \DateTime $endedAt
+     */
+    protected $endedAt;
+
+    /**
      * @var float $winner
      */
     protected $winner;
@@ -133,13 +138,37 @@ class EloVersus implements EloVersusInterface
     }
 
     /**
+     * Set ended at
+     *
+     * @param \DateTime $endedAt
+     *
+     * @return $this
+     */
+    public function setEndedAt(\DateTime $endedAt)
+    {
+        $this->endedAt = $endedAt;
+
+        return $this;
+    }
+
+    /**
+     * Get ended at
+     *
+     * @return \DateTime
+     */
+    public function getEndedAt()
+    {
+        return $this->endedAt;
+    }
+
+    /**
      * Set winner
      *
      * @param float $winner
      *
      * @return $this
      */
-    public function setWinner($winner = null)
+    public function setWinner($winner)
     {
         $this->winner = $winner;
 
