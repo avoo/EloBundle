@@ -15,7 +15,6 @@
 
         <service id="avoo_elo.listener.elo_versus" class="Avoo\EloBundle\Listener\EloVersusSubscriber">
             <argument type="service" id="avoo_elo.calculator.default" />
-            <!--<tag name="doctrine.event_listener" event="prePersist" method="prePersist" />-->
             <tag name="doctrine.event_subscriber" />
         </service>
     </services>

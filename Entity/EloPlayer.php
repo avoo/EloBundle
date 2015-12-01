@@ -28,8 +28,6 @@ namespace Avoo\EloBundle\Entity;
 
 use Avoo\Elo\Model\EloPlayerInterface;
 use Avoo\Elo\Model\EloUserInterface;
-use Doctrine\ORM\Event\LifecycleEventArgs;
-
 
 /**
  * @author Jérémy Jégou <jejeavo@gmail.com>

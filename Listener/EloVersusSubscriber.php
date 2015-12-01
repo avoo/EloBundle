@@ -27,12 +27,10 @@
 namespace Avoo\EloBundle\Listener;
 
 use Avoo\Elo\EloPoint;
-use Avoo\Elo\Model\EloPlayerInterface;
 use Avoo\Elo\Model\EloVersusInterface;
 use Doctrine\Common\EventSubscriber;
 use Doctrine\ORM\EntityManager;
 use Doctrine\ORM\Event\LifecycleEventArgs;
-use Doctrine\ORM\Event\OnFlushEventArgs;
 use Doctrine\ORM\Event\PreUpdateEventArgs;
 use Doctrine\ORM\Events;
 
