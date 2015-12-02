@@ -6,6 +6,7 @@
 
     <services>
         <service id="avoo_elo.calculator.default" class="Avoo\Elo\EloPoint" public="false">
+            <argument>null</argument>
             <argument type="service" id="avoo_elo.configuration.default" />
             <argument type="service" id="avoo_elo.aggregation.default" />
         </service>

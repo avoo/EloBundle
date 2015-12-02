@@ -45,7 +45,7 @@ class EloPlayer implements EloPlayerInterface
     protected $elo;
 
     /**
-     * @var object $user
+     * @var EloUserInterface $user
      */
     protected $user;
 
@@ -87,10 +87,14 @@ class EloPlayer implements EloPlayerInterface
      * Set user
      *
      * @param EloUserInterface $user
+     *
+     * @return $this
      */
     public function setUser(EloUserInterface $user)
     {
         $this->user = $user;
+
+        return $this;
     }
 
     /**
