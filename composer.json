@@ -6,7 +6,7 @@
     "license": "MIT",
     "require": {
         "php": ">=5.3.3",
-        "avoo/elo": "@dev-master",
+        "avoo/elo": "0.2@dev",
         "stof/doctrine-extensions-bundle": "~1.2"
     },
     "require-dev": {
