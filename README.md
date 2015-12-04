@@ -27,7 +27,7 @@ Require [`avoo/elo-bundle`](https://packagist.org/packages/avoo/elo-bundle) into
 ``` json
 {
     "require": {
-        "avoo/elo-bundle": "0.1.0"
+        "avoo/elo-bundle": "~0.1"
     }
 }
 ```
